@@ -1,3 +1,4 @@
+
 <?php
 $id = $_GET["id"]; //?id~**を受け取る
 include("funcs.php");
@@ -44,10 +45,11 @@ if($status==false) {
   <div class="jumbotron">
    <fieldset>
     <legend>[編集]</legend>
-     <label>名前：<input type="text" name="name" value="<?=$row["name"]?>"></label><br>
-     <label>Email：<input type="text" name="email" value="<?=$row["email"]?>"></label><br>
-     <label>年齢：<input type="text" name="age" value="<?=$row["age"]?>"></label><br>
-     <label><textArea name="naiyou" rows="4" cols="40"><?=$row["naiyou"]?></textArea></label><br>
+     <label>主人公の名前：<input type="text" name="hero" value="<?=$row["hero"]?>"></label><br>
+     <label>物語の背景・設定：<input type="text" name="setting" value="<?=$row["setting"]?>"></label><br>
+     <label>最初のシーン：<input type="text" name="first_scene" value="<?=$row["first_scene"]?>"></label><br>
+     <label>選択肢1：<input type="text" name="choice1_text" value="<?=$row["choice1_text"]?>"></label><br>
+     <label>選択肢2：<input type="text" name="choice2_text" value="<?=$row["choice2_text"]?>"></label><br>
      <input type="submit" value="送信">
      <input type="hidden" name="id" value="<?=$id?>">
     </fieldset>
