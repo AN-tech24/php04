@@ -24,7 +24,7 @@
             <div class="jumbotron">
                 <fieldset>
 
-                    <legend>フリーアンケート</legend>
+                    <legend>あなたの物語をつくろう！</legend>
                     <label for="hero">主人公の名前:</label>
         <select id="hero" name="hero" required>
             <option value="">選択してください</option>
